@@ -1,0 +1,9 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1783076898568,860,01_open web page,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,5664,527,1,1,null,0,137,790
+1783076898694,860,01,200,,Thread Group 1-1,text,true,,5664,527,1,1,https://petstore.octoperf.com/actions/Catalog.action,857,0,790
+1783076899567,42,02_click on Fish,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3928,676,1,1,null,0,616,0
+1783076900177,42,02-2,200,,Thread Group 1-1,text,true,,3928,676,1,1,https://petstore.octoperf.com/actions/Catalog.action;jsessionid=FD2108854A69E47F5D1F22BDCFB9F6DD?viewCategory=&categoryId=FISH,42,0,0
+1783076900226,44,03_Click on product Id,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,4106,708,1,1,null,0,1006,0
+1783076901231,44,03,200,,Thread Group 1-1,text,true,,4106,708,1,1,https://petstore.octoperf.com/actions/Catalog.action?viewProduct=&productId=FI-SW-01,44,0,0
+1783076901277,44,04_Click on Item Id,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3807,657,1,1,null,0,675,0
+1783076901951,44,04,200,,Thread Group 1-1,text,true,,3807,657,1,1,https://petstore.octoperf.com/actions/Catalog.action?viewItem=&itemId=EST-2,44,0,0
