@@ -1,0 +1,1 @@
+La latency si riferisce al numero di millisecondi tra il tempo in cui Jmeter invia la request e quando la risposta iniziale è stata ricevuta.

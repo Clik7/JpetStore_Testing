@@ -1,0 +1,3 @@
+Indica la variabilità delle response times
+
+PIU' è BASSA PIU' IL SERVER è STABILE

@@ -1,0 +1,3 @@
+Quanto tempo impiega una richiesta in secondi 
+
+ad esempio: 100 transazioni in 10 secondi: vuol dire 10 transazioni al secondo.

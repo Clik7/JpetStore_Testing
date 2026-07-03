@@ -1,0 +1,92 @@
+Nella HTML Assertion di JMeter, Error Threshold e Warning Threshold servono a decidere quando l’assertion deve fallire in base al numero di problemi trovati nell’HTML.
+
+Vediamoli in modo chiaro 👇
+
+🔴 Error Threshold
+
+È il numero massimo di errori gravi HTML consentiti.
+
+Se il numero di errori > Error Threshold
+👉 l’assertion FALLISCE
+
+Se è ≤ Error Threshold
+👉 l’assertion PASSA
+
+💡 Gli errori sono problemi seri:
+
+tag non chiusi
+
+struttura HTML rotta
+
+markup non interpretabile
+
+🟠 Warning Threshold
+
+È il numero massimo di warning HTML consentiti.
+
+Se i warning > Warning Threshold
+👉 l’assertion FALLISCE
+
+Se è ≤ Warning Threshold
+👉 l’assertion PASSA
+
+💡 I warning sono problemi meno gravi:
+
+tag deprecati
+
+attributi non consigliati
+
+struttura “sospetta” ma funzionante
+
+🧠 Come vengono usati insieme
+
+L’assertion:
+
+conta errori
+
+conta warning
+
+confronta entrambi con le rispettive soglie
+
+Se una sola soglia viene superata → FAIL.
+
+⚙️ Esempio pratico
+
+Impostazioni:
+
+Error Threshold = 0
+
+Warning Threshold = 5
+
+Risultato HTML:
+
+0 errori
+
+3 warning
+
+👉 PASSA
+
+Se invece:
+
+1 errore
+
+0 warning
+
+👉 FALLISCE (perché 1 > 0)
+
+📌 Impostazioni consigliate
+In test funzionali
+
+Error Threshold = 0
+
+Warning Threshold = alto (o disabilitato)
+
+In test di performance
+
+⚠️ Meglio evitarla o:
+
+Error Threshold = alto
+
+Warning Threshold = alto
+
+(perché la validazione HTML è costosa e può falsare i tempi)

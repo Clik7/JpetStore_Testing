@@ -1,0 +1,2 @@
+(?i).*.(bmp|css|js|gif|ico|jpe?g|png|swf|eot|otf|ttf|mp4|woff|
+woff2|svg)
